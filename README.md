@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 04_Prototype — Banking Intent Classifier (Proof of Concept)
 
 A small, working prototype that takes a customer message and returns an
@@ -104,3 +105,6 @@ BANKING77 dataset, from the PolyAI research team:
 https://huggingface.co/datasets/PolyAI/banking77
 (CSV files obtained from the official PolyAI GitHub repository:
 https://github.com/PolyAI-LDN/task-specific-datasets)
+=======
+# banking-ai-prototype
+>>>>>>> ab4519f1cdd1a239ef426d0e7e3559c569982fd4
