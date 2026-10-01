@@ -1,0 +1,151 @@
+[
+  {
+    "input": "My card hasn't arrived yet.",
+    "output": {
+      "intent": "card_arrival",
+      "confidence": 0.67,
+      "recommended_action": "Check card delivery status",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "card_arrival",
+          "score": 0.67
+        },
+        {
+          "intent": "transfer_not_received_by_recipient",
+          "score": 0.17
+        },
+        {
+          "intent": "balance_not_updated_after_bank_transfer",
+          "score": 0.16
+        }
+      ]
+    }
+  },
+  {
+    "input": "I made a transfer yesterday but the money still hasn't reached the recipient.",
+    "output": {
+      "intent": "transfer_not_received_by_recipient",
+      "confidence": 0.56,
+      "recommended_action": "Trace the transfer and confirm recipient details",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "transfer_not_received_by_recipient",
+          "score": 0.56
+        },
+        {
+          "intent": "balance_not_updated_after_bank_transfer",
+          "score": 0.21
+        },
+        {
+          "intent": "cancel_transfer",
+          "score": 0.16
+        }
+      ]
+    }
+  },
+  {
+    "input": "why was I charged for withdrawing cash",
+    "output": {
+      "intent": "cash_withdrawal_charge",
+      "confidence": 0.84,
+      "recommended_action": "Review ATM withdrawal fee with the customer",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "cash_withdrawal_charge",
+          "score": 0.84
+        },
+        {
+          "intent": "declined_cash_withdrawal",
+          "score": 0.1
+        },
+        {
+          "intent": "wrong_amount_of_cash_received",
+          "score": 0.05
+        }
+      ]
+    }
+  },
+  {
+    "input": "I want to close my account",
+    "output": {
+      "intent": "terminate_account",
+      "confidence": 1.0,
+      "recommended_action": "Start account closure process",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "terminate_account",
+          "score": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "input": "How do I add money using Apple Pay?",
+    "output": {
+      "intent": "apple_pay_or_google_pay",
+      "confidence": 0.93,
+      "recommended_action": "Check digital wallet (Apple/Google Pay) support for their card",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "apple_pay_or_google_pay",
+          "score": 0.93
+        },
+        {
+          "intent": "top_up_failed",
+          "score": 0.07
+        }
+      ]
+    }
+  },
+  {
+    "input": "Someone used my card without my permission.",
+    "output": {
+      "intent": "compromised_card",
+      "confidence": 0.77,
+      "recommended_action": "Freeze card immediately and start fraud review",
+      "needs_review": false,
+      "top_matches": [
+        {
+          "intent": "compromised_card",
+          "score": 0.77
+        },
+        {
+          "intent": "lost_or_stolen_card",
+          "score": 0.13
+        },
+        {
+          "intent": "topping_up_by_card",
+          "score": 0.05
+        }
+      ]
+    }
+  },
+  {
+    "input": "asdkjh random gibberish text 12345",
+    "output": {
+      "intent": "cash_withdrawal_not_recognised",
+      "confidence": 0.38,
+      "recommended_action": "Open a transaction dispute for the ATM withdrawal",
+      "needs_review": true,
+      "top_matches": [
+        {
+          "intent": "cash_withdrawal_not_recognised",
+          "score": 0.38
+        },
+        {
+          "intent": "card_payment_not_recognised",
+          "score": 0.33
+        },
+        {
+          "intent": "transfer_fee_charged",
+          "score": 0.16
+        }
+      ]
+    }
+  }
+]
